@@ -1,0 +1,26 @@
+
+<!--modal fade = adds transition effect which fakes the modal in and out.
+    role="dialog improves accessibility for people using screen readers
+    modal-dialog sets the proper width and margin of the modal-->
+<div id="errorModal" class="modal fade" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <!--The <div> with class="modal-content" styles the modal (border, background-color, etc.). Inside this <div>, add the modal's header, body, and footer-->
+    <div class="modal-content">
+      <!--The .modal-header class is used to define the style for the header of the modal. The <button> inside the header has a data-dismiss="modal" attribute which closes the modal if you click on it. The .close class styles the close button, and the .modal-title class styles the header with a proper line-height-->
+      <div class="modal-header">
+        <h5 class="modal-title">{{modalHeaderText}}</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <!--The .modal-body class is used to define the style for the body of the modal. Add any HTML markup here; paragraphs, images, videos, etc-->
+      <div class="modal-body">
+        <p>{{modalBodyText}}</p>
+      </div>
+      <!--The .modal-footer class is used to define the style for the footer of the modal. Note that this area is right aligned by default.-->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">{{okButtonText}}</button>
+      </div>
+    </div>
+  </div>
+</div>

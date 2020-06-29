@@ -3,14 +3,15 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\menu",
     "\\src\\app\\owner",
+    "\\src\\app\\owner\\owner-create",
     "\\src\\app\\owner\\owner-list",
     "\\src\\app\\shared",
-    "\\src\\app\\shared\\services",
-    "\\src\\app\\_interfaces",
-    "\\src\\environments"
+    "\\src\\app\\shared\\directives",
+    "\\src\\app\\shared\\modals",
+    "\\src\\app\\shared\\modals\\success-modal",
+    "\\src\\app\\_interfaces"
   ],
-  "SelectedNode": "\\src\\environments\\environment.ts",
+  "SelectedNode": "\\src\\app\\shared\\services\\error-handler.service.ts",
   "PreviewInSolutionExplorer": false
 }
