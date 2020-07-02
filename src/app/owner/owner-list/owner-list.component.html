@@ -9,15 +9,15 @@
   <div class="col-md-12">
     <div class="table-responsive">
       <!-- Using bootstrap classes to create table-->
-      <table class="table-responsive table-striped">
+      <table class="table table-striped">
         <thead>
           <tr>
-            <th>Owner name</th>
-            <th>Owner address</th>
-            <th>Date of Birth</th>
-            <th>Details</th>
-            <th>Update</th>
-            <th>Delete</th>
+            <th class="align-middle">Owner name</th>
+            <th class="align-middle">Owner address</th>
+            <th class="align-middle">Date of Birth</th>
+            <th class="align-middle">Details</th>
+            <th class="align-middle">Update</th>
+            <th class="align-middle">Delete</th>
           </tr>
         </thead>
         <tbody>
@@ -26,9 +26,9 @@
             <td>{{owner.name}}</td>
             <td>{{owner.address}}</td>
             <td>{{owner.dateOfBirth | date: 'dd/MM/yyyy'}}</td>
-            <td><button type="button" id="details" class="btn btn-light" (click)="getOwnerDetails(owner.id)"></button></td>
-            <td><button type="button" id="update" class="btn btn-success"></button></td>
-            <td><button type="button" id="delete" class="btn btn-danger"></button></td>
+            <td><button type="button" id="details" class="btn btn-light" (click)="getOwnerDetails(owner.ownerId)">Details</button></td>
+            <td><button type="button" id="update" class="btn btn-success">Update</button></td>
+            <td><button type="button" id="delete" class="btn btn-danger">Delete</button></td>
           </tr>
         </tbody>
       </table>

@@ -10,7 +10,7 @@ describe('workspace-project App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('CodeMaze-AngularClient app is running!');
+    expect(page.getTitleText()).toEqual('WebApiClient app is running!');
   });
 
   afterEach(async () => {

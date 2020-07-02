@@ -1,6 +1,6 @@
-export interface Account {
-  id: string;
+export interface Report {
+  reportId: string;
   dateCreated: Date;
-  accountType: string;
+  reportType: string;
   ownerId?: string; //? marks property as optional
 }

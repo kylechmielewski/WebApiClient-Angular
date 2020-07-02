@@ -1,10 +1,10 @@
-import { Account } from './account.model';
+import { Report } from './report.model';
 
 export interface Owner {
-  id: string;
+  ownerId: string;
   name: string;
   dateOfBirth: Date;
   address: string;
 
-  accounts?: Account[]; //? marks propery as optional.
+  reports?: Report[]; //? marks propery as optional.
 }

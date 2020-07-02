@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "CodeMaze-AngularClient": {
+    "WebApiClient": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/CodeMaze-AngularClient",
+            "outputPath": "dist/WebApiClient",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -67,18 +67,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "CodeMaze-AngularClient:build"
+            "browserTarget": "WebApiClient:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "CodeMaze-AngularClient:build:production"
+              "browserTarget": "WebApiClient:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "CodeMaze-AngularClient:build"
+            "browserTarget": "WebApiClient:build"
           }
         },
         "test": {
@@ -115,15 +115,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "CodeMaze-AngularClient:serve"
+            "devServerTarget": "WebApiClient:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "CodeMaze-AngularClient:serve:production"
+              "devServerTarget": "WebApiClient:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "CodeMaze-AngularClient"
+  "defaultProject": "WebApiClient"
 }

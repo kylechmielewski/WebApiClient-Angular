@@ -75,7 +75,7 @@ export class OwnerCreateComponent implements OnInit {
       )
   }
 
-  public redirectoToOwnerList() {
+  public redirectToOwnerList() {
     this.router.navigate(['/Owner/List'])
   }
 

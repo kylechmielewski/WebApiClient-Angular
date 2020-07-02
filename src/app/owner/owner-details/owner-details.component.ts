@@ -25,7 +25,7 @@ export class OwnerDetailsComponent implements OnInit {
   getOwnerDetails = () => {
     //Need activated route because we have to get our id from the route
     let id: string = this.activeRoute.snapshot.params['id'];
-    let apiUrl: string = `api/owner/${id}/account`;
+    let apiUrl: string = `api/owner/${id}/report`;
 
     this.repository.getData(apiUrl)
       .subscribe(result => {

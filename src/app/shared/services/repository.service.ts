@@ -12,7 +12,7 @@ export class RepositoryService {
   //wrapper for all GET requests
   //It accepts the route parameter of type string (api/owner or api/owner/id …) and then combines it with the environment variable (localhost or www…)
   public getData = (route: string) => {
-    return this.http.get(this.createCompleteRoute(route, this.envUrl.urlAddress));
+    return this.http.get(this.createCompleteRoute(route, this.envUrl.urlAddress), this.generateHeaders());
   }
 
   public create = (route: string, body) => {
@@ -33,7 +33,7 @@ export class RepositoryService {
 
   private generateHeaders = () => {
     return {
-      headers: new HttpHeaders({'Content-Type': 'application/json'})
+      headers: new HttpHeaders({ 'Content-Type': 'application/json' })
     }
   }
 }
