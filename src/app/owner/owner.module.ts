@@ -8,6 +8,7 @@ import { OwnerListComponent } from './owner-list/owner-list.component';
 import { OwnerDetailsComponent } from './owner-details/owner-details.component';
 import { OwnerCreateComponent } from './owner-create/owner-create.component';
 import { OwnerUpdateComponent } from './owner-update/owner-update.component';
+import { OwnerDeleteComponent } from './owner-delete/owner-delete.component';
 
 
 
@@ -16,7 +17,8 @@ import { OwnerUpdateComponent } from './owner-update/owner-update.component';
     OwnerListComponent,
     OwnerDetailsComponent,
     OwnerCreateComponent,
-    OwnerUpdateComponent],
+    OwnerUpdateComponent,
+    OwnerDeleteComponent],
   imports: [
     CommonModule,
     SharedModule,
@@ -26,7 +28,8 @@ import { OwnerUpdateComponent } from './owner-update/owner-update.component';
       { path: 'List', component: OwnerListComponent },
       { path: 'Details/:id', component: OwnerDetailsComponent },
       { path: 'Create', component: OwnerCreateComponent },
-      { path: 'Update/:id', component: OwnerUpdateComponent }
+      { path: 'Update/:id', component: OwnerUpdateComponent },
+      { path: 'Delete/:id', component: OwnerDeleteComponent }
     ])
   ]
 })
