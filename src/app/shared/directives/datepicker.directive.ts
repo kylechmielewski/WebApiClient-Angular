@@ -1,5 +1,4 @@
-import { Directive, Output, ElementRef, OnInit } from '@angular/core';
-import { EventEmitter } from 'events';
+import { Directive, ElementRef, Output, EventEmitter, OnInit } from '@angular/core';
 
 @Directive({
   selector: '[appDatepicker]'
@@ -19,5 +18,4 @@ export class DatepickerDirective implements OnInit {
       }
     });
   }
-
 }

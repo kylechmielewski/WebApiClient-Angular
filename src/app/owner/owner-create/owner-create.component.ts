@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { OwnerForCreation } from './../../_interfaces/owner-create.model';
 import { ErrorHandlerService } from './../../shared/services/error-handler.service';
-import { RepositoryService } from './../../shared/services/repository.service'
+import { RepositoryService } from './../../shared/services/repository.service';
 import { Router } from '@angular/router';
 import { DatePipe } from '@angular/common';
 
@@ -16,12 +16,9 @@ export class OwnerCreateComponent implements OnInit {
 
   public ownerForm: FormGroup;
 
-  constructor(private repository: RepositoryService,
-    private errorHandler: ErrorHandlerService,
-    private router: Router,
-    private datePipe: DatePipe) { }
+  constructor(private repository: RepositoryService, private errorHandler: ErrorHandlerService, private router: Router, private datePipe: DatePipe) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
     this.ownerForm = new FormGroup({
       //These names the same as .html for="<xxx>". Also same names as owner.model.ts
       //First parameter of FormControl is a default value for control
@@ -76,7 +73,7 @@ export class OwnerCreateComponent implements OnInit {
   }
 
   public redirectToOwnerList() {
-    this.router.navigate(['/Owner/List'])
+    this.router.navigate(['/Owner/List']);
   }
 
 }
