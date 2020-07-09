@@ -39,4 +39,14 @@ export class OwnerListComponent implements OnInit {
     const detailsUrl: string = `/Owner/Details/${id}`;
     this.router.navigate([detailsUrl]);
   }
+
+  public redirectToUpdatePage = (id) => {
+    const updateUrl: string = `/Owner/Update/${id}`;
+    this.router.navigate([updateUrl]);
+  }
+
+  public redirectToDeletePage = (id) => {
+    const deleteUrl: string = `/Owner/Delete/${id}`
+    this.router.navigate([deleteUrl]);
+  }
 }

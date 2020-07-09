@@ -19,11 +19,11 @@
       </div>
 
       <div class="form-group row">
-        <label for="dateOfBirth" class="control-label col-md-2">Date of brith: </label>
+        <label for="dateOfBirth" class="control-label col-md-2">Date of birth: </label>
         <div class="col-md-5">
           <!--formControlName is mandatory, represents the control name which we are going to validate.-->
           <input type="text" formControlName="dateOfBirth" id="dateOfBirth" class="form-control" appDatepicker
-                 (change)="executeDatePicker($event)" readonly />
+                 (change)="executeDatePicker($event)" readonly/>
         </div>
         <div class="col-md-5">
           <!--em = emphasized text = italic = screen reader uses verbal stress. Used to display errors-->

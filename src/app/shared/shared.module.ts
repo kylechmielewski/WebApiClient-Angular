@@ -7,13 +7,13 @@ import { DatepickerDirective } from './directives/datepicker.directive';
 
 
 @NgModule({
+  imports: [
+    CommonModule
+  ],
   declarations: [
     ErrorModalComponent,
     SuccessModalComponent,
     DatepickerDirective
-  ],
-  imports: [
-    CommonModule
   ],
   exports: [
     ErrorModalComponent,
